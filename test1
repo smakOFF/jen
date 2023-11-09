@@ -1,0 +1,12 @@
+ip address
+per=1
+if [[ per -eq 1 ]]
+then
+	echo "Hi, my name is "
+	whoami
+	ls -la
+	echo ip a | grep ens36
+else
+	echo "all bad"
+    exit 1
+fi
